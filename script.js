@@ -28,6 +28,8 @@ function getComputerChoice(){
     return computerChoices[compSelector];
 }
 
+
+//returns an int, 0 = tie, 1 = Player Won, 2 = Computer Won
 function getRoundWinner(playerSelection, computerSelection){
     if (playerSelection === computerSelection)
         return 0;
@@ -52,6 +54,7 @@ function getRoundWinner(playerSelection, computerSelection){
     }
 }
 
+//Displays Text and increments scores
 function roundMessageScores(roundStatus, playerSelection, computerSelection){
     //tie
     if(roundStatus == 0)
