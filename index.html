@@ -9,7 +9,27 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        Hello World;
+        <div id="container">
+            <div id="title-board">
+                <div class="player-title titles">Player</div>
+                <div class="computer-title titles">Computer</div>
+            </div>
+            <div id="score-board">
+                <div id="player-scoreID" class="player-score scorecard"></div>
+                <div id="computer-scoreID" class="computer-score scorecard">0</div>
+            </div>
+            <div id="announcements"></div>
+
+            <div id="choices-container">
+                <div class="choice" id="choice-rock" onclick="startRound('rock')">Rock</div>
+                <div class="choice" id="choice-paper" onclick="startRound('paper')">Paper</div>
+                <div class="choice" id="choice-scissors" onclick="startRound('scissors')">Scissors</div>
+            </div>
+            <div style="width: 100%;">
+                <button id="reset-button" onclick="reloadPage()">Restart Game</button>
+            </div>
+
+        </div>
         <script src="script.js" async defer></script>
     </body>
 </html>
